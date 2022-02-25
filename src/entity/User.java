@@ -9,6 +9,8 @@ public class User {
 	private final String username;
 	
 	private final String password;
+	
+	private Role role;
 
 	public User(String firstname, String lastname, String username, String password) {
 		super();
@@ -32,6 +34,14 @@ public class User {
 
 	public String getPassword() {
 		return password;
+	}
+
+	public Role getRole() {
+		return role;
+	}
+
+	public void setRole(Role role) {
+		this.role = role;
 	}
 
 	@Override
