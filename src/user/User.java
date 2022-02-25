@@ -8,19 +8,52 @@ public class User {
 	private final String lastname;
 	private final String username;
 	private final String password;
-	private final Role role;
+	private Role role;
 	
 	
 
-	public User(String firstname, String lastname, String username, String password, Role role) {
+	public User(String firstname, String lastname, String username, String password) {
 		super();
 		this.firstname = firstname;
 		this.lastname = lastname;
 		this.username = username;
 		this.password = password;
+	
+	}
+
+	
+	public Role getRole() {
+		return role;
+	}
+
+	public void setRole(Role role) {
 		this.role = role;
 	}
 
+
+	public String getFirstname() {
+		return firstname;
+	}
+
+	public String getLastname() {
+		return lastname;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+	
+	public void print()
+	{
+		System.out.println("Izmena");
+		System.out.println("Druga izmena");
+	}
+	
+	
 
 
 	@Override
