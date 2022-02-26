@@ -3,5 +3,7 @@ package entity;
 public enum Role {
 
 	EDITOR,
-	ADMINISTRATOR
+	ADMIN,
+	PROMENA
+	
 }

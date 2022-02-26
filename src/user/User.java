@@ -5,11 +5,14 @@ import entity.Role;
 public class User {
 	
 	private final String firstname;
-	private final String lastname;
-	private final String username;
-	private final String password;
-	private Role role;
 	
+	private final String lastname;
+	
+	private final String username;
+	
+	private final String password;
+
+	private Role role;
 	
 
 	public User(String firstname, String lastname, String username, String password) {
@@ -18,6 +21,7 @@ public class User {
 		this.lastname = lastname;
 		this.username = username;
 		this.password = password;
+
 	
 	}
 
@@ -35,34 +39,28 @@ public class User {
 		return firstname;
 	}
 
+
+
 	public String getLastname() {
 		return lastname;
 	}
+
 
 	public String getUsername() {
 		return username;
 	}
 
+
 	public String getPassword() {
 		return password;
 	}
-	
-	public void print()
-	{
-		System.out.println("Izmena");
-		System.out.println("Druga izmena");
-	}
-	
-	
 
 
 	@Override
 	public String toString() {
-		return "Admin: firstname=" + firstname + ", lastname=" + lastname + ", username=" + username + ", password=" + password ;
+		return "User [firstname=" + firstname + ", lastname=" + lastname + ", username=" + username + ", password="
+				+ password + "]";
 	}
-	
-	
-	
 	
 	
 	
