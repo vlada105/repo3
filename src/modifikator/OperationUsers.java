@@ -6,7 +6,7 @@ import user.User;
 
 public interface OperationUsers {
 
-	public boolean checkLogin(List<User> users, String username, String password);
+	
 	
 	public void showAllUsers(List<User> users);
 	

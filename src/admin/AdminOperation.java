@@ -17,16 +17,6 @@ public class AdminOperation extends User implements OperationUsers {
 		
 	}
 
-	@Override
-	public boolean checkLogin(List<User> users, String username, String password) {
-		
-		
-		
-		
-		return false;
-		
-	}
-
 	
 	
 	public boolean checkLoggedInUser(List<User> users, String username, String password)
